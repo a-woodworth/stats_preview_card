@@ -61,12 +61,12 @@ body {
   background-color: var(--accent-color);
   margin-bottom: 2.5rem;
   max-width: 20.5rem;
-  opacity: 0.75;
 }
 
 .card__image img {
+  aspect-ratio: 327 / 240;
   display: block;
-  mix-blend-mode: overlay;
+  mix-blend-mode: multiply;
   object-fit: cover;
   width: 100%;
 }
