@@ -7,48 +7,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
 
   <body>
-    <main class="card">
-      <div class="img-container">
-        <picture class="card__image">
-          <source 
-            type="image/png"
-            media="(min-width: 68.75rem)"
-            srcset="images/image-header-desktop.jpg">
-          <img 
-            src="images/image-header-mobile.jpg" 
-            alt="Several women working on computers while sitting at a conference room table.">
-        </picture>
+    <main class="container">
+      <div class="card">
+        <div class="img-container">
+          <picture class="card__image">
+            <source 
+              type="image/png"
+              media="(min-width: 68.75rem)"
+              srcset="images/image-header-desktop.jpg">
+            <img 
+              src="images/image-header-mobile.jpg" 
+              alt="Several women working on computers while sitting at a conference room table.">
+          </picture>
+        </div>
+        <section id="stats">
+          <h1 class="card__title">Get <span class="title--color">insights</span> that help your business grow.</h1>
+          <h2 class="card__subtitle">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</h2>
+          <ul class="stats__list">
+            <li class="stats__list-item">
+              <h3>
+                <span class="stat__number">10k+</span><br>
+                <span class="stat__type">companies</span>
+              </h3>
+            </li>
+            <li class="stats__list-item">
+              <h3>
+                <span class="stat__number">314</span><br>
+                <span class="stat__type">templates</span>
+              </h3>
+            </li>
+            <li class="stats__list-item">
+              <h3>
+                <span class="stat__number">12m+</span><br>
+                <span class="stat__type">queries</span>
+              </h3>
+            </li>
+          </ul>
+        </section>
       </div>
-      <section id="stats">
-        <h1 class="card__title">Get insights that help your business grow.</h1>
-        <h2 class="card__subtitle">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</h2>
-        <ul class="stats__list">
-          <li class="stats__list-item">
-            <h3>
-              10k+<br>
-              companies
-            </h3>
-          </li>
-          <li class="stats__list-item">
-            <h3>
-              314<br>
-              templates
-            </h3>
-          </li>
-          <li class="stats__list-item">
-            <h3>
-              12m+<br>
-              queries
-            </h3>
-          </li>
-        </ul>
-      </section>
     </main>
     <footer>
       <div class="attribution">
