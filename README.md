@@ -30,7 +30,7 @@ Users should be able to:
 ![Mobile Sceenshot](/screenshots/stats-preview-card-mobile-375px.png)
 
 ### Links
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/stats-preview-card-using-flex-and-grid-z5iUs-cinK)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/stats_preview_card/)
 
 ### Built with
