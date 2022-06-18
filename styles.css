@@ -49,6 +49,7 @@ body {
   box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
   border-radius: 8px;
   width: 100%;
+  max-width: 20.5rem;
 }
 
 .img-container,
@@ -60,7 +61,6 @@ body {
 .img-container {
   background-color: var(--accent-color);
   margin-bottom: 2.5rem;
-  max-width: 20.5rem;
 }
 
 .card__image img {
@@ -76,7 +76,6 @@ body {
  {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -91,7 +90,7 @@ body {
 }
 
 .card__title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.14;
   margin-bottom: 1rem;
@@ -150,4 +149,51 @@ ul li:last-child {
 
 .attribution a:hover {
   color: var(--primary-color);
+}
+
+@media (min-width: 68.75rem) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 27.875rem;
+    justify-content: stretch;
+    max-width: 68.75rem;
+  }
+  #stats {
+    align-items: flex-start;
+    flex-basis: 51%;
+    padding-left: 4.5rem;
+    padding-top: 4.5rem;
+    text-align: left;
+  }
+  .img-container {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 8px;
+    flex-basis: 49%;
+    margin-bottom: 0;
+  }
+  .card__image img {
+    aspect-ratio: 874 / 582;
+    height: 100%;
+    object-fit: fill;
+    object-position: left top;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0;
+  }
+  .card__title {
+    font-size: 2.25rem;
+    line-height: 1.22;
+    margin-bottom: 1.625rem;
+    width: 25.25rem;
+  }
+  .card__subtitle {
+    margin-bottom: 4.5rem;
+    width: 23.375rem;
+  }
+  .stats__list {
+    align-self: flex-start;
+    flex-direction: row;
+    gap: 4rem;
+    padding-bottom: 3.75rem;
+  }
 }
